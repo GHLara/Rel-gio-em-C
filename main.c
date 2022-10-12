@@ -12,26 +12,19 @@ int main(){
 	}
 	while(1){
 		s++;
-		if(s > 59)
-		{
+		if(s > 59){
 			m++;
 			s = 0;
 		}
-		if(m > 59)
-		{
+		if(m > 59){
 			h++;
 			m = 0;
 		}
-		if(h == 24)
-		{
+		if(h == 24){
 			h = 0;
 		}
-
-
 	printf("\n Clock: ");
 	printf("%02d:%02d:%02d", h,m,s);
 	system("sleep 1");
 	system("clear");}
-
-
 }
